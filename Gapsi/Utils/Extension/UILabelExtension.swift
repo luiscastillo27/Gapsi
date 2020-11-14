@@ -11,12 +11,12 @@ extension UILabel {
     
     func primary() {
         self.tintColor = .primaryColor
-        self.font = UIFont.systemFont(ofSize: 12)
+        self.font = UIFont.systemFont(ofSize: 15)
     }
     
     func secondary() {
         self.textColor = .secudaryColor
-        self.font = UIFont.systemFont(ofSize: 10)
+        self.font = UIFont.systemFont(ofSize: 13)
     }
     
     func center() {

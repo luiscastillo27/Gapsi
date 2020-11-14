@@ -1,0 +1,11 @@
+/* 
+  localized.strings
+  Gapsi
+
+  Created by luis on 14/11/20.
+  
+*/
+
+"ALERT_ERROR" = "Error";
+"ALERT_ERROR_BODY" = "Se ha producido un error";
+"KEYBOARD_OK" = "Aceptar";

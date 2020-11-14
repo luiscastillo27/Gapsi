@@ -29,7 +29,7 @@ class HomeController: UIViewController {
     // MARK: Functions
     private func setup() {
         setupTable()
-        loadData()
+        loadSeach(search: "computer")
     }
     
     private func localize() {
@@ -42,10 +42,10 @@ class HomeController: UIViewController {
         tableView.register(UINib(nibName: ProductsCell.kCellId, bundle: nil), forCellReuseIdentifier: ProductsCell.kCellId)
     }
     
-    private func loadData(){
+    private func loadSeach( search:String ){
         self.listProducts = []
         SVProgressHUD.show()
-        Singelton.manager.currentSearch = "computer"
+        Singelton.manager.currentSearch = search
         viewModel.getProducts() { [unowned self] result in
             SVProgressHUD.dismiss()
             switch result {
@@ -86,7 +86,9 @@ extension HomeController: UITableViewDataSource, UITableViewDelegate {
 extension HomeController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+        print("hola: ", searchText)
+        Singelton.manager.currentSearch = searchText
+        self.loadSeach(search: searchText)
     }
     
 }

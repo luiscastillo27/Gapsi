@@ -33,6 +33,7 @@
 		A0FDDEEC255F93A5005DC6EA /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FDDEEB255F93A5005DC6EA /* ProductService.swift */; };
 		A0FDDEEF255F945C005DC6EA /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FDDEEE255F945C005DC6EA /* ProductViewModel.swift */; };
 		A0FDDEF5255F954C005DC6EA /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FDDEF4255F954C005DC6EA /* Products.swift */; };
+		A0FF6B8E255FB0D900857B28 /* localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0FF6B8D255FB0D900857B28 /* localized.strings */; };
 		B0F6EE2223FD2352266B518F /* Pods_Gapsi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDFFE8DDABAAF2DCEA90542 /* Pods_Gapsi.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,8 @@
 		A0FDDEEB255F93A5005DC6EA /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		A0FDDEEE255F945C005DC6EA /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		A0FDDEF4255F954C005DC6EA /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		A0FF6B8D255FB0D900857B28 /* localized.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = localized.strings; sourceTree = "<group>"; };
+		A0FF6B90255FB0F200857B28 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DEDFFE8DDABAAF2DCEA90542 /* Pods_Gapsi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gapsi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +139,7 @@
 				A01FA247255F655300E436C8 /* SceneDelegate.swift */,
 				A01FA253255F655500E436C8 /* Info.plist */,
 				A0FDDEE1255F9208005DC6EA /* Singelton.swift */,
+				A0FF6B8D255FB0D900857B28 /* localized.strings */,
 			);
 			path = SupportFiles;
 			sourceTree = "<group>";
@@ -314,6 +318,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = A01FA239255F655300E436C8;
 			productRefGroup = A01FA243255F655300E436C8 /* Products */;
@@ -334,6 +339,7 @@
 				A01FA252255F655500E436C8 /* LaunchScreen.storyboard in Resources */,
 				A0F34C13255F77F0001C6CE5 /* ProductsCell.xib in Resources */,
 				A0F34BEB255F7329001C6CE5 /* HomeController.xib in Resources */,
+				A0FF6B8E255FB0D900857B28 /* localized.strings in Resources */,
 				A01FA24F255F655500E436C8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +424,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A01FA251255F655500E436C8 /* Base */,
+				A0FF6B90255FB0F200857B28 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -429,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -490,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
